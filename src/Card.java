@@ -16,10 +16,10 @@ public class Card
 		 
 		 //Generate 5 cards
 		 for (int i = 0; i < 5; i++)
-		 {  
+		 {
 			 faceValue = generator.nextInt(13) + 1;
 			 suitValue = generator.nextInt(4) + 1;
-		     System.out.print(card);
+			 System.out.print(card);
 		 }
 	}
 	
@@ -72,7 +72,7 @@ public class Card
 
 	 	switch (suitValue)
 	 	{
-	   		case 1:
+	 		case 1:
 	   			card +='S';
 	   			break;
 	   		case 2:	
@@ -85,13 +85,13 @@ public class Card
 	   			card +='H';
 	   			break;
 	   	}
-	  return card;
+	 	return card;
 	}
 	
 	// Create Class Card with 2 parameters for faceValue and suitValue
-	public Card(int suit, int face)  
-    {
+	public Card(int suit, int face)
+	{
 		faceValue = suit;
 		suitValue = face;
-    }
+	}
 }
